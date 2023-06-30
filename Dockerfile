@@ -1,3 +1,2 @@
-FROM nginx
-COPY Calculator-one.war .
-CMD ["java", "-war", "Calculator-one.war"]
+FROM tomcat:latest
+COPY Calculator-one.war /usr/local/tomcat/webapps
